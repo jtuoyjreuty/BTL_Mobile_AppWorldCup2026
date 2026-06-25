@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="60dp" android:background="#0A2A5B" android:padding="10dp">
+        <ImageButton android:id="@+id/btnBack" android:layout_width="40dp" android:layout_height="40dp" android:background="?attr/selectableItemBackgroundBorderless" android:src="@android:drawable/ic_menu_revert" app:tint="#FFFFFF" xmlns:app="http://schemas.android.com/apk/res-auto"/>
+        <TextView android:id="@+id/tvTitleHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="THÊM TRẬN ĐẤU MỚI" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <EditText android:id="@+id/edtDoiNha" android:layout_width="match_parent" android:layout_height="50dp" android:background="@android:color/white" android:hint="Tên Đội Nhà (VD: Brazil)" android:padding="10dp" android:layout_marginBottom="15dp" android:elevation="2dp"/>
+
+            <EditText android:id="@+id/edtDoiKhach" android:layout_width="match_parent" android:layout_height="50dp" android:background="@android:color/white" android:hint="Tên Đội Khách (VD: France)" android:padding="10dp" android:layout_marginBottom="15dp" android:elevation="2dp"/>
+
+            <EditText android:id="@+id/edtThoiGian" android:layout_width="match_parent" android:layout_height="50dp" android:background="@android:color/white" android:hint="Thời gian (VD: 20:00 - 15/06)" android:padding="10dp" android:layout_marginBottom="15dp" android:elevation="2dp"/>
+
+            <EditText android:id="@+id/edtTyLeKeo" android:layout_width="match_parent" android:layout_height="50dp" android:background="@android:color/white" android:hint="Tỷ lệ kèo (VD: Chấp 0.5, Tài Xỉu 2.5)" android:padding="10dp" android:layout_marginBottom="15dp" android:elevation="2dp"/>
+
+            <EditText android:id="@+id/edtBaiNhanDinh" android:layout_width="match_parent" android:layout_height="200dp" android:background="@android:color/white" android:hint="Nhập nội dung bài nhận định chuyên sâu tại đây..." android:gravity="top|start" android:inputType="textMultiLine" android:padding="10dp" android:layout_marginBottom="20dp" android:elevation="2dp"/>
+
+            <Button android:id="@+id/btnLuuTranDau" android:layout_width="match_parent" android:layout_height="60dp" android:backgroundTint="#4CAF50" android:text="LƯU DỮ LIỆU" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

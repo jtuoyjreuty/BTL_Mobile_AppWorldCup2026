@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0A2A5B"
+        android:padding="10dp">
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="#FFFFFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="CÀI ĐẶT"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TÙY CHỈNH ỨNG DỤNG" android:textColor="#888888" android:textSize="12sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="8dp" app:cardElevation="1dp" android:layout_marginBottom="20dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp" android:gravity="center_vertical" android:paddingHorizontal="15dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Thông báo bàn thắng" android:textColor="#333333" android:textSize="16sp"/>
+                        <Switch android:id="@+id/swThongBao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE"/>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp" android:gravity="center_vertical" android:paddingHorizontal="15dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Hiển thị giờ Việt Nam (GMT+7)" android:textColor="#333333" android:textSize="16sp"/>
+                        <Switch android:id="@+id/swMuiGio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HỆ THỐNG" android:textColor="#888888" android:textSize="12sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="8dp" app:cardElevation="1dp" android:layout_marginBottom="20dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp" android:gravity="center_vertical" android:paddingHorizontal="15dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Giao diện tối (Dark Mode)" android:textColor="#333333" android:textSize="16sp"/>
+                        <Switch android:id="@+id/swDarkMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false"/>
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE"/>
+
+                    <LinearLayout android:id="@+id/btnClearCache" android:layout_width="match_parent" android:layout_height="50dp" android:gravity="center_vertical" android:paddingHorizontal="15dp" android:background="?attr/selectableItemBackground">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Xóa bộ nhớ đệm (Cache)" android:textColor="#333333" android:textSize="16sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14.2 MB" android:textColor="#888888" android:textSize="14sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="8dp" app:cardElevation="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <LinearLayout android:id="@+id/btnCredits" android:layout_width="match_parent" android:layout_height="50dp" android:gravity="center_vertical" android:paddingHorizontal="15dp" android:background="?attr/selectableItemBackground">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Thông tin tác giả (Credits)" android:textColor="#333333" android:textSize="16sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=">" android:textColor="#888888" android:textStyle="bold"/>
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE"/>
+
+                    <LinearLayout android:id="@+id/btnRate" android:layout_width="match_parent" android:layout_height="50dp" android:gravity="center_vertical" android:paddingHorizontal="15dp" android:background="?attr/selectableItemBackground">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Đánh giá ứng dụng" android:textColor="#333333" android:textSize="16sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⭐⭐⭐⭐⭐" android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Phiên bản 1.0.0" android:gravity="center" android:textColor="#BBBBBB" android:textSize="12sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
